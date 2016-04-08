@@ -15,7 +15,7 @@ var bio = {
         "HTML/CSS",
         "Go"
     ],
-    "biopic": "images/photo.jpg",
+    "biopic": "/static/images/photo.jpg",
 };
 
 var education = {
