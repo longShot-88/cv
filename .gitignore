@@ -50,6 +50,7 @@ builds/**/images/*
 *.mp4
 *.png
 *.jpeg
+*.ico
 
 # security / ssl
 *.pem
