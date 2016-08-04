@@ -2,18 +2,17 @@ var bio = {
     "name": "Andrés Muñoz",
     "role": "Developer",
     "contacts": {
-        "mobile": "099-892-4454",
+        "mobile": "097-908-4645",
         "email": "asmz5488@gmail.com",
         "github": "longShot-88",
         "twitter": "@AndyMz88",
         "location": "Quito-Ecuador"
     },
-    "welcomeMessage": 'Hola Mundo, este es mi CV !! Lo hice utilizando los lenguajes de programación que manejo, en los cuales me voy perfeccionando todos los días porque me encanta la tecnología :D  !!',
+    "welcomeMessage": 'Hola Mundo, este es mi CV !!',
     "skills": [
         "Python",
         "javaScript",
         "HTML/CSS",
-        "Go"
     ],
     "biopic": "/static/images/photo.jpg",
 };
@@ -99,17 +98,17 @@ var work = {
     "jobs": [
         {
             "employer": "kings Dominion",
-            "title": "artista",
+            "title": "ilustrador",
             "location": "EEUU",
             "dates": "2012",
-            "description": "Pintar tatuajes falsos en un parque de diversiones, mejoro mi Ingles."
+            "description": "Encargado de un stand del parque de diversiones, mejoro mi Ingles."
         },
         {
             "employer": "Luna Lunera",
-            "title": "Publicista",
+            "title": "Publicista y de todo un poco !!",
             "location": "Quito-Ecuador",
             "dates": "2013-2016",
-            "description": "Ayudo a promocionar el local de forma tradicional y digital hice la pagina web."
+            "description": "Ayudo a promocionar el local de forma tradicional y digital"
         }
     ],
 };
@@ -223,16 +222,16 @@ var displayEducation = function () {
         $(".education-entry:last").append(formattedLocation);
         $(".education-entry:last").append(formattedMajor);
     });
-    
+
     $('#education').append(HTMLonlineClasses);
-    
+
     education.onlineCourses.forEach(function (wk, _) {
         $('#education').append(HTMLschoolStart);
         var formattedTitle = HTMLonlineTitle.replace("%data%", wk.title);
         formattedTitle = formattedTitle.replace("%data2%", wk.url);
         var formattedSchool = HTMLonlineSchool.replace("%data%", wk.school);
         var formattedDate = HTMLonlineDates.replace("%data%", wk.date);
-        
+
         $(".education-entry:last").append(formattedTitle +formattedSchool);
         $(".education-entry:last").append(formattedDate);
     });
@@ -247,6 +246,3 @@ $("#footerContacts").prepend(formattedTwitter);
 $("#footerContacts").prepend(formattedGithub);
 $("#footerContacts").prepend(formattedEmail);
 $("#footerContacts").prepend(formattedMobile);
-
-
-
